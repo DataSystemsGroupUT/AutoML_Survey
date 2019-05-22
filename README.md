@@ -20,14 +20,15 @@ This repository will be organized into X separate sections:
   - [Learning From Prior Models](#learning-from-prior-models)
     - [Transfer Learning](#transfer-learning)
     - [Few-Shot Learning](#few-shot-learning)
-+ [Various approaches for tackling neural architecture search (NAS) problem.] (#Neural Architecture Search)
-  - 
-+ [Different approaches for automated hyper-parameter optimization (HPO).] (#HPO)
-  - 
++ [Neural Architecture Search Problem] (#neural-architecture-search-problem)
+  - [Random Search](#random-search)
+  - [Reinforcement Learning](#reinforcement-learning)
+  - [Evolutionary Methods](#evolutionary-methods)
+  - [Gradient Based Methods](#gradient-based-methods)
+  - [Bayesian Optimization](#bayesian-optimization)
++ [Automated Hyper-Parameter Optimization] (#automated-hyper-paramtere-optimization)
 + [Various tools and frameworks that have been implemented to tackle the CASH problem.](#Tools-Frameworks)
-  - 
 + [Pre-modeling and Post-Modeling of the complex machine learning pipeline.](#Complex-Pipeline)
-  - 
 
 <hr>
 
@@ -82,4 +83,40 @@ Selection and Hyperparameter Tuning for Machine Learning Algorithms.  | Maher an
     
 <hr>
 
+## Neural Architecture Search Problem
+Neural Architecture Search (NAS) is a fundamental step in automating the machine learning process and has been successfully used to design the model architecture for image and language tasks.
+  - 2018 | Progressive neural architecture search.  | Liu et al. | ECCV | [`PDF`](https://arxiv.org/abs/1712.00559)
+  - 2018 | Efficient architecture search by network transformation. | Cai et al. | AAAI | [`PDF`](https://arxiv.org/abs/1707.04873)
+  - 2018 | Learning transferable architectures for scalable image recognition. | Zoph et al. | IEEE CVPR | [`PDF`](https://arxiv.org/abs/1707.07012)
+  - 2017 | Hierarchical representations for efficient architecture search. | Liu et al. | [`PDF`](https://arxiv.org/abs/1711.00436)
+  - 2016 | Neural architecture search with reinforcement learning.  | Zoph and Le | [`PDF`](https://arxiv.org/abs/1611.01578)
+  - 2009 | Learning deep architectures for AI. | Bengio et al. | [`PDF`](https://www.iro.umontreal.ca/~lisa/pointeurs/TR1312.pdf)
 
+<div style="text-align: center">
+<img src="Figures/NAS-1.png" width="700px" atl="Neural Architecture Search Methods"/>
+</div>
+
++ ### Random Search
+  - 2017 | Train Longer, Generalize Better: Closing the Generalization Gap in Large Batch Training of Neural Networks. | Hoffer et al.  | NIPS | [`PDF`](https://arxiv.org/abs/1705.08741)
+  - 2019 | Random Search and Reproducibility for Neural Architecture Search. | Li and Talwalkar | [`PDF`](https://arxiv.org/abs/1902.07638)
++ ### Reinforcement Learning
+  - 2019 | Neural architecture search with reinforcement learning. | Zoph and Le | [`PDF`](https://arxiv.org/abs/1611.01578)
+  - 2019 | Designing neural network architectures using reinforcement learning. | Baker et al. | [`PDF`](https://arxiv.org/abs/1611.02167)
++ ### Evolutionary Methods
+  - 2019 | Evolutionary Neural AutoML for Deep Learning. | Liang et al. | [`PDF`](https://arxiv.org/abs/1902.06827)
+  - 2019 | Evolving deep neural networks. | Miikkulainen et al. | [`PDF`](https://arxiv.org/abs/1703.00548)
+  - 2018 | a multi-objective genetic algorithm for neural architecture search. | Lu et al. | [`PDF`](https://arxiv.org/abs/1810.03522)
+  - 2018 | Efficient multi-objective neural architecture search via lamarckian evolution. | Elsken et al. | [`PDF`](https://arxiv.org/abs/1804.09081)
+  - 2018 | Regularized evolution for image classifier architecture search. | Real et al. | [`PDF`](https://arxiv.org/abs/1802.01548)
+  - 2017 | Large-scale evolution of image classifiers | Real et al. | ICML | [`PDF`](https://arxiv.org/abs/1703.01041)
+  - 2017 | Hierarchical representations for efficient architecture search. | Liu et al. | [`PDF`](https://arxiv.org/abs/1711.00436)
+  - 2009 | A hypercube-based encoding for evolving large-scale neural networks. | Stanley et al. | Artificial Life | [`PDF`](http://axon.cs.byu.edu/~dan/778/papers/NeuroEvolution/stanley3**.pdf)
+  - 2002 | Evolving neural networks through augmenting topologies. | Stanley and Miikkulainen | Evolutionary Computation | [`PDF`](https://dl.acm.org/citation.cfm?id=638554)
++ ### Bayesian Optimization
+  - 2018 | Towards reproducible neural architecture and hyperparameter search. | Klein et al. | [`PDF`](https://openreview.net/forum?id=rJeMCSnml7)
+  - 2018 | Neural Architecture Search with Bayesian Optimisation and Optimal Transport | Kandasamy et al. | NIPS | [`PDF`](https://arxiv.org/abs/1802.07191)
+  - 2016 | Towards automatically-tuned neural networks. | Mendoza et al. | PMLR | [`PDF`](http://proceedings.mlr.press/v64/mendoza_towards_2016.html)
+  - 2015 | Speeding up automatic hyperparameter optimization of deep neural networks by extrapolation of learning curves. | Domhan et al. | IJCAI | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf)
+  - 2014 | Raiders of the lost architecture: Kernels for Bayesian optimization in conditional parameter spaces. | Swersky et al. | [`PDF`](https://arxiv.org/abs/1409.4011)
+  - 2013 | Making a science of model search: Hyperparameter optimization in hundreds of dimensions for vision architectures. | Bergstra et al. | [`PDF`](http://proceedings.mlr.press/v28/bergstra13.pdf)
+  - 2011 | Algorithms for hyper-parameter optimization. | Bergstra et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
