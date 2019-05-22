@@ -46,8 +46,6 @@ This repository will be organized into 5 separate sections:
     - [Data Validation](#data-validation)
     - [Data Preparation](#data-preparation)
   - [Post-Modeling](#post-modeling)
-    - [Model Tracking](#model-tracking)
-    - [Model Deployment](#model-deployment)
 
 <hr>
 
@@ -285,7 +283,19 @@ The aspects of these two building blocks can help on covering what is missed in 
     + ##### Feature Synthesis
       - 2015 | Deep feature synthesis: Towards automating data science endeavors. | Kanter and Veeramachaneni | DSAA | [`PDF`](http://www.jmaxkanter.com/static/papers/DSAA_DSM_2015.pdf) | [`Github`](https://github.com/Featuretools/featuretools)
 ### Post-Modeling
-  + #### Model Tracking
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
-  + #### Model Deployment
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
+  - 2019 | Model Chimp | [`URL`](https://modelchimp.com/)
+  - 2018 | ML-Flow | [`URL`](https://mlflow.org)
+  - 2017 | Datmo | [`URL`](https://github.com/datmo/datmo)
+  
+## Contribute:  
+To contribute a change to add more references to our repository, you can follow these steps:
+1. Create a branch in git and make your changes.
+2. Push branch to github and issue pull request (PR).
+3. Discuss the pull request.
+4. We are going to review the request, and merge it to the repository.
+
+## Citation:
+ For more details, please refer to our Survey Paper
+ ```
+Radwa El-Shawi, Mohamed Maher, Sherif Sakr., Automated Machine Learning: State-of-The-Art and Open Challenges (2019).
+```
