@@ -35,8 +35,19 @@ This repository will be organized into X separate sections:
   - [Multi-Fidelity Optimization](#multi-fidelity-optimization)
     - [Modeling Learning Curve](#modeling-learning-curve)
     - [Bandit Based](#bandit-based)
-+ [Various tools and frameworks that have been implemented to tackle the CASH problem.](#Tools-Frameworks)
-+ [Pre-modeling and Post-Modeling of the complex machine learning pipeline.](#Complex-Pipeline)
++ [AutoML Tools and Frameworks](#automl tools and frameworks)
+  - [Centralized Frameworks](#centralized-frameworks)
+  - [Distributed Frameworks](#distributed-frameworks)
+  - [Cloud-Based Frameworks](#cloud-based-frameworks)
+  - [NAS Tools](#nas-tools)
++ [Pre-Modeling and Post-Modeling Aiding Tools](#pre-modeling-and-post-modeling-aiding-tools)
+  - [Pre-Modeling](#pre-modeling)
+    - [Data Understanding](#data-understanding)
+    - [Data Validation](#data-validation)
+    - [Data Preparation](#data-preparation)
+  - [Post-Modeling](#post-modeling)
+    - [Model Tracking](#model-tracking)
+    - [Model Deployment](#model-deployment)
 
 <hr>
 
@@ -180,3 +191,62 @@ It is worth mentioning that some tools have democratized the space of different 
   + #### Bandit Based
     - 2016 | Non-stochastic Best Arm Identification and Hyperparameter Optimization. | Jamieson and Talwalkar | AISTATS | [`PDF`](https://arxiv.org/abs/1502.07943)
     - 2016 | Hyperband: A novel bandit-based approach to hyperparameter optimization. | Kirkpatrick et al. | JMLR | [`PDF`](http://www.jmlr.org/papers/volume18/16-558/16-558.pdf)
+
+<hr>
+
+## AutoML Tools and Frameworks
+
+  + ### Centralized Frameworks
+
+|                  | Date | Language |  Training Framework  |                      Optimization Method                      |                                               ML Tasks                                              | Meta-Learning | UI | Automatic Feature Extraction |                                                 Open Source                                                 | PDF                                                                                                                                                     |
+|:----------------:|:----:|:--------:|:--------------------:|:-------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:-------------:|:--:|:----------------------------:|:-----------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     AutoWeka     | 2013 |   Java   |         Weka         |                     Bayesian Optimization                     |                                Single-label classification regression                               |       ×       |  √ |               √              | [`Github`](https://github.com/automl/autoweka) ['Tool'](https://www.cs.ubc.ca/labs/beta/Projects/autoweka/) | [`PDF`](https://dl.acm.org/citation.cfm?id=2487629)                                                                                                     |
+|    AutoSklearn   | 2015 |  Python  |     Scikit-Learn     |                     Bayesian Optimization                     |                                Single-label classification regression                               |       √       |  × |               √              |  [`Github`](https://github.com/automl/auto-sklearn)  ['Tool'](https://www.automl.org/automl/auto-sklearn/)  | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/15-NIPS-auto-sklearn-preprint.pdf)                                                                 |
+|       TPOT       | 2016 |  Python  |     Scikit-Learn     |                       Genetic Algorithm                       |                                Single-label classification regression                               |       ×       |  × |               ×              |                               [`Github`](https://github.com/EpistasisLab/tpot)                              | [`PDF`](https://www.semanticscholar.org/paper/TPOT%3A-A-Tree-based-Pipeline-Optimization-Tool-for-Olson-Moore/4086c25292a17e33b823261d3c176bf88e88b4cf) |
+|      SmartML     | 2019 |     R    | Different R Packages |                     Bayesian Optimization                     |                                     Single-label classification                                     |       √       |  √ |               ×              |                          [`Github`](https://github.com/DataSystemsGroupUT/SmartML)                          | [`PDF`](https://openproceedings.org/2019/conf/edbt/EDBT19_paper_235.pdf)                                                                                |
+|     Auto-Meka    | 2018 |   Java   |         Meka         |                Grammer Based Genetic Algorithm                |                                      Multi-label classification                                     |       √       |  × |               ×              |                               [`Github`](https://github.com/laic-ufmg/automlc)                              | [`PDF`](https://www.cs.kent.ac.uk/people/staff/aaf/pub_papers.dir/PPSN-2018-de-Sa.pdf)                                                                  |
+|      Recipe      | 2017 |  Python  |     Scikit-Learn     |                Grammer Based Genetic Algorithm                |                                     Single-label classification                                     |       √       |  × |               √              |                               [`Github`](https://github.com/laic-ufmg/Recipe)                               | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-319-55696-3_16)                                                                                 |
+|      ML-Plan     | 2018 |   Java   |  Weka / Scikit-Learn |                   Hierarchical Task Planning                  |                                     Single-label classification                                     |       ×       |  × |               √              |                                 [`Github`](https://github.com/fmohr/AILibs)                                 | [`PDF`](https://link.springer.com/article/10.1007/s10994-018-5735-z)                                                                                    |
+| HyperOpt-Sklearn | 2014 |  Python  |     Scikit-Learn     | Bayesian Optimization, Simulated Annealing, and Random Search |                                Single-label classification regression                               |       ×       |  × |               √              |                           [`Github`](https://github.com/hyperopt/hyperopt-sklearn)                          | [`PDF`](http://conference.scipy.org/proceedings/scipy2014/pdfs/komer.pdf)                                                                               |
+|    AutoStacker   | 2018 |     -    |           -          |                       Genetic Algorithm                       |                                     Single-label classification                                     |       ×       |  × |               √              |                                                      ×                                                      | [`PDF`](https://arxiv.org/abs/1803.00684)                                                                                                               |
+|        VDS       | 2019 |     -    |           -          |    Cost-Based Multi-Armed Bandits and Bayesian Optimization   | Single-label classification, regression, image classification, audio classification, graph matching |       √       |  √ |               √              |                                                      ×                                                      | [`PDF`](https://confer.csail.mit.edu/sigmod2019/papers)                                                                                                 |
+|     AlphaD3M     | 2018 |     -    |           -          |                     Reinforcement Learning                    |                                Single-label classification regression                               |       √       |  × |               √              |                                                      ×                                                      | [`PDF`](https://www.cs.columbia.edu/~idrori/AlphaD3M.pdf)                                                                                               |
+|       OBOE       | 2019 |  Python  |     Scikit-Learn     |                    Collaborative Filtering                    |                                     Single-label classification                                     |       √       |  × |               ×              |                                [`Github`](https://github.com/udellgroup/oboe)                               | [`PDF`](https://arxiv.org/abs/1808.03233)                                                                                                               |
+|        PMF       | 2018 |  Python  |     Scikit-Learn     |       Collaborative Filtering and Bayesian Optimization       |                                     Single-label classification                                     |       √       |  × |               √              |                             [`Github`](https://github.com/rsheth80/pmf-automl/)                             | [`PDF`](https://papers.nips.cc/paper/7595-probabilistic-matrix-factorization-for-automated-machine-learning.pdf)                                        |
+
+
+  + ### Distributed Frameworks
+  
+  |               | Date | Language |    Training Framework   |                  Optimization Method                  | Meta-Learning | UI |                                          Open Source                                          |                               PDF                              |
+|:-------------:|:----:|:--------:|:-----------------------:|:-----------------------------------------------------:|:-------------:|:--:|:---------------------------------------------------------------------------------------------:|:--------------------------------------------------------------:|
+|     MLBase    | 2013 |   Scala  |        SparkMlib        |             Cost-based Multi-Armed Bandits            |       ×       |  × |                             × [`Website`](http://www.mlbase.org/)                             | [`PDF`](http://cidrdb.org/cidr2013/Papers/CIDR13_Paper118.pdf) |
+|      ATM      | 2017 |  Python  |       Scikit-Learn      | Hybrid Bayesian, and Multi-armed bandits Optimization |       √       |  × |                         [`Github`](https://github.com/HDI-Project/ATM)                        |            [`PDF`](https://cyphe.rs/static/atm.pdf)            |
+|     MLBox     | 2017 |  Python  |    Scikit-Learn Keras   | Distributed Random search, and Tree-Parzen estimators |       ×       |  × |                       [`Github`](https://github.com/AxeldeRomblay/MLBox)                      |                                ×                               |
+|     Rafiki    | 2018 |  Python  | Scikit-Learn TensorFlow |    Distributed random search, Bayesian Optimization   |       ×       |  √ |                          [`Github`](https://github.com/nginyc/rafiki)                         |     [`PDF`](http://www.vldb.org/pvldb/vol12/p128-wang.pdf)     |
+| TransmogrifAI | 2018 |   Scala  |         SparkML         |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
+  + ### Cloud Based Frameworks
+
+
+<hr>
+
+## Pre-Modeling and Post-Modeling Aiding Tools
+
+While current different AutoML tools and frameworks have minimized the role of data scientist in the modeling part and saved much effort, there is still several aspects that need human intervention and interpretability in order to make the correct decisions that can enhance and affect the modeling steps. These aspects belongs to two main building blocks of the machine learning production pipeline: Pre-Modeling and PostModeling.
+
+<div style="text-align: center">
+<img src="Figures/mlPipeline-1.png" width="900px" atl="Extended Machine Learning Pipeline"/>
+</div>
+
+The aspects of these two building blocks can help on covering what is missed in current AutoML tools, and help data scientists in doing their job in a much easier, organized, and informative way.
+
+<div style="text-align: center">
+<img src="Figures/moreAuto-1.png" width="900px" atl="Pre-Modeling and Post-Modeling Steps"/>
+</div>
+
+### Pre-Modeling
+  + #### Data Understanding
+  + #### Data Validation
+  + #### Data Preparation
+### Post-Modeling
+  + #### Model Tracking
+  + #### Model Deployment
