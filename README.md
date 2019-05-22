@@ -116,8 +116,8 @@ Neural Architecture Search (NAS) is a fundamental step in automating the machine
 </div>
 
 + ### Random Search
-  - 2017 | Train Longer, Generalize Better: Closing the Generalization Gap in Large Batch Training of Neural Networks. | Hoffer et al.  | NIPS | [`PDF`](https://arxiv.org/abs/1705.08741)
   - 2019 | Random Search and Reproducibility for Neural Architecture Search. | Li and Talwalkar | [`PDF`](https://arxiv.org/abs/1902.07638)
+  - 2017 | Train Longer, Generalize Better: Closing the Generalization Gap in Large Batch Training of Neural Networks. | Hoffer et al.  | NIPS | [`PDF`](https://arxiv.org/abs/1705.08741)
 + ### Reinforcement Learning
   - 2019 | Neural architecture search with reinforcement learning. | Zoph and Le | [`PDF`](https://arxiv.org/abs/1611.01578)
   - 2019 | Designing neural network architectures using reinforcement learning. | Baker et al. | [`PDF`](https://arxiv.org/abs/1611.02167)
@@ -225,11 +225,10 @@ It is worth mentioning that some tools have democratized the space of different 
 |     Rafiki    | 2018 |  Python  | Scikit-Learn TensorFlow |    Distributed random search, Bayesian Optimization   |       ×       |  √ |                          [`Github`](https://github.com/nginyc/rafiki)                         |     [`PDF`](http://www.vldb.org/pvldb/vol12/p128-wang.pdf)     |
 | TransmogrifAI | 2018 |   Scala  |         SparkML         |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
 
-  + ### Cloud Based Frameworks
+  + ### Cloud-Based Frameworks
     - Google AutoML | [`URL`](https://cloud.google.com/automl/)
     - Azure AutoML | [`URL`](https://azure.microsoft.com/en-us/)
     - Amazon SageMaker | [`URL`](https://aws.amazon.com/)
-    - LEAF (Auto Deep Learning Over Cloud Platforms) | [`PDF`](https://arxiv.org/abs/1902.06827)
   
   + ### NAS Frameworks
   
@@ -260,8 +259,26 @@ The aspects of these two building blocks can help on covering what is missed in 
 
 ### Pre-Modeling
   + #### Data Understanding
+    + ##### Sanity Checking
+      - 2017 | Controlling False Discoveries During Interactive Data Exploration. | Zhao et al. | SIGMOD | [`PDF`](https://dl.acm.org/citation.cfm?id=3064019)
+      - 2016 | Data Exploration with Zenvisage: An Expressive and Interactive Visual Analytics System. | Siddiqui et al. | VLDB | [`PDF`](http://www.vldb.org/pvldb/vol10/p457-siddiqui.pdf) | [`TOOL`](https://github.com/zenvisage)
+      - 2015 | SEEDB: Efficient Data-Driven Visualization Recommendations to Support Visual Analytics. | Vartak et al. | PVLDB | [`PDF`](http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf) | [`TOOL`](https://github.com/snknitin/-SeeDB)
+    + ##### Feature Based Analysis
+      - 2016 | Visual Exploration of Machine Learning Results Using Data Cube Analysis. | Kahng et al. | HILDA | [`PDF`](https://s3.andyfang.me/papers/16-mlcube-hilda.pdf)
+      - 2015 | Smart Drill-down: A New Data Exploration Operator.  | Joglekar et al. | VLDB | [`PDF`](http://www.vldb.org/pvldb/vol8/p1928-joglekar.pdf)
+    + ##### Data Life-Cycle Analysis
+      - 2017 | Ground: A Data Context Service  | Hellerstein et al. | CIDR | [`PDF`](http://cidrdb.org/cidr2017/papers/p111-hellerstein-cidr17.pdf) | [`URL`](http://www.ground-context.org/)
+      - 2016 | ProvDB: A System for Lifecycle Management of Collaborative Analysis Workflows. | Miao et al. | CoRR | [`PDF`](https://arxiv.org/abs/1610.04963) | [`Github`](https://github.com/DLR-SC/prov-db-connector)
+      - 2016 | Goods: Organizing Google’s Datasets.  | Halevy et al. | SIGMOD | [`PDF`](https://research.google.com/pubs/archive/45390.pdf)
+    
   + #### Data Validation
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
   + #### Data Preparation
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
 ### Post-Modeling
   + #### Model Tracking
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
   + #### Model Deployment
+    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
