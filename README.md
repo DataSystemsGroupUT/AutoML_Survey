@@ -20,13 +20,13 @@ This repository will be organized into X separate sections:
   - [Learning From Prior Models](#learning-from-prior-models)
     - [Transfer Learning](#transfer-learning)
     - [Few-Shot Learning](#few-shot-learning)
-+ [Neural Architecture Search Problem] (#neural-architecture-search-problem)
++ [Neural Architecture Search Problem](#neural-architecture-search-problem)
   - [Random Search](#random-search)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Evolutionary Methods](#evolutionary-methods)
   - [Gradient Based Methods](#gradient-based-methods)
   - [Bayesian Optimization](#bayesian-optimization)
-+ [Automated Hyper-Parameter Optimization] (#automated-hyper-paramtere-optimization)
++ [Automated Hyper-Parameter Optimization](#automated-hyper-paramtere-optimization)
 + [Various tools and frameworks that have been implemented to tackle the CASH problem.](#Tools-Frameworks)
 + [Pre-modeling and Post-Modeling of the complex machine learning pipeline.](#Complex-Pipeline)
 
@@ -112,6 +112,10 @@ Neural Architecture Search (NAS) is a fundamental step in automating the machine
   - 2017 | Hierarchical representations for efficient architecture search. | Liu et al. | [`PDF`](https://arxiv.org/abs/1711.00436)
   - 2009 | A hypercube-based encoding for evolving large-scale neural networks. | Stanley et al. | Artificial Life | [`PDF`](http://axon.cs.byu.edu/~dan/778/papers/NeuroEvolution/stanley3**.pdf)
   - 2002 | Evolving neural networks through augmenting topologies. | Stanley and Miikkulainen | Evolutionary Computation | [`PDF`](https://dl.acm.org/citation.cfm?id=638554)
++ ### Gradient Based Methods
+  - 2018 | Differentiable neural network architecture search. | Shin et al. | [`PDF`](https://openreview.net/pdf?id=BJ-MRKkwG)
+  - 2018 | Darts: Differentiable architecture search. | Liu et al. | [`PDF`](https://arxiv.org/abs/1806.09055)
+  - 2018 | MaskConnect: Connectivity Learning by Gradient Descent. | Ahmed and Torresani  | [`PDF`](https://arxiv.org/abs/1807.11473)
 + ### Bayesian Optimization
   - 2018 | Towards reproducible neural architecture and hyperparameter search. | Klein et al. | [`PDF`](https://openreview.net/forum?id=rJeMCSnml7)
   - 2018 | Neural Architecture Search with Bayesian Optimisation and Optimal Transport | Kandasamy et al. | NIPS | [`PDF`](https://arxiv.org/abs/1802.07191)
