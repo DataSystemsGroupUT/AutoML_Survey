@@ -8,7 +8,7 @@ In this repository, we present the references mentioned in a comprehensive surve
 <hr>
 
 ## Table of Contents & Organization:
-This repository will be organized into X separate sections:
+This repository will be organized into 5 separate sections:
 + [Meta-Learning Techniques for AutoML search problem](#meta-learning-techniques-for-automl-search-problem)
   - [Learning From Model Evaluation](#learning-from-model-evaluation)
     - [Surrogate Models](#surrogate-models)
@@ -35,11 +35,11 @@ This repository will be organized into X separate sections:
   - [Multi-Fidelity Optimization](#multi-fidelity-optimization)
     - [Modeling Learning Curve](#modeling-learning-curve)
     - [Bandit Based](#bandit-based)
-+ [AutoML Tools and Frameworks](#automl tools and frameworks)
++ [AutoML Tools and Frameworks](#automl-tools-and-frameworks)
   - [Centralized Frameworks](#centralized-frameworks)
   - [Distributed Frameworks](#distributed-frameworks)
   - [Cloud-Based Frameworks](#cloud-based-frameworks)
-  - [NAS Tools](#nas-tools)
+  - [NAS Frameworks](#nas-frameworks)
 + [Pre-Modeling and Post-Modeling Aiding Tools](#pre-modeling-and-post-modeling-aiding-tools)
   - [Pre-Modeling](#pre-modeling)
     - [Data Understanding](#data-understanding)
@@ -197,6 +197,7 @@ It is worth mentioning that some tools have democratized the space of different 
 ## AutoML Tools and Frameworks
 
   + ### Centralized Frameworks
+  
 
 |                  | Date | Language |  Training Framework  |                      Optimization Method                      |                                               ML Tasks                                              | Meta-Learning | UI | Automatic Feature Extraction |                                                 Open Source                                                 | PDF                                                                                                                                                     |
 |:----------------:|:----:|:--------:|:--------------------:|:-------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:-------------:|:--:|:----------------------------:|:-----------------------------------------------------------------------------------------------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -204,8 +205,8 @@ It is worth mentioning that some tools have democratized the space of different 
 |    AutoSklearn   | 2015 |  Python  |     Scikit-Learn     |                     Bayesian Optimization                     |                                Single-label classification regression                               |       √       |  × |               √              |  [`Github`](https://github.com/automl/auto-sklearn)  ['Tool'](https://www.automl.org/automl/auto-sklearn/)  | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/15-NIPS-auto-sklearn-preprint.pdf)                                                                 |
 |       TPOT       | 2016 |  Python  |     Scikit-Learn     |                       Genetic Algorithm                       |                                Single-label classification regression                               |       ×       |  × |               ×              |                               [`Github`](https://github.com/EpistasisLab/tpot)                              | [`PDF`](https://www.semanticscholar.org/paper/TPOT%3A-A-Tree-based-Pipeline-Optimization-Tool-for-Olson-Moore/4086c25292a17e33b823261d3c176bf88e88b4cf) |
 |      SmartML     | 2019 |     R    | Different R Packages |                     Bayesian Optimization                     |                                     Single-label classification                                     |       √       |  √ |               ×              |                          [`Github`](https://github.com/DataSystemsGroupUT/SmartML)                          | [`PDF`](https://openproceedings.org/2019/conf/edbt/EDBT19_paper_235.pdf)                                                                                |
-|     Auto-Meka    | 2018 |   Java   |         Meka         |                Grammer Based Genetic Algorithm                |                                      Multi-label classification                                     |       √       |  × |               ×              |                               [`Github`](https://github.com/laic-ufmg/automlc)                              | [`PDF`](https://www.cs.kent.ac.uk/people/staff/aaf/pub_papers.dir/PPSN-2018-de-Sa.pdf)                                                                  |
-|      Recipe      | 2017 |  Python  |     Scikit-Learn     |                Grammer Based Genetic Algorithm                |                                     Single-label classification                                     |       √       |  × |               √              |                               [`Github`](https://github.com/laic-ufmg/Recipe)                               | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-319-55696-3_16)                                                                                 |
+|     Auto-Meka    | 2018 |   Java   |         Meka         |                Grammer-Based Genetic Algorithm                |                                      Multi-label classification                                     |       √       |  × |               ×              |                               [`Github`](https://github.com/laic-ufmg/automlc)                              | [`PDF`](https://www.cs.kent.ac.uk/people/staff/aaf/pub_papers.dir/PPSN-2018-de-Sa.pdf)                                                                  |
+|      Recipe      | 2017 |  Python  |     Scikit-Learn     |                Grammer-Based Genetic Algorithm                |                                     Single-label classification                                     |       √       |  × |               √              |                               [`Github`](https://github.com/laic-ufmg/Recipe)                               | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-319-55696-3_16)                                                                                 |
 |      ML-Plan     | 2018 |   Java   |  Weka / Scikit-Learn |                   Hierarchical Task Planning                  |                                     Single-label classification                                     |       ×       |  × |               √              |                                 [`Github`](https://github.com/fmohr/AILibs)                                 | [`PDF`](https://link.springer.com/article/10.1007/s10994-018-5735-z)                                                                                    |
 | HyperOpt-Sklearn | 2014 |  Python  |     Scikit-Learn     | Bayesian Optimization, Simulated Annealing, and Random Search |                                Single-label classification regression                               |       ×       |  × |               √              |                           [`Github`](https://github.com/hyperopt/hyperopt-sklearn)                          | [`PDF`](http://conference.scipy.org/proceedings/scipy2014/pdfs/komer.pdf)                                                                               |
 |    AutoStacker   | 2018 |     -    |           -          |                       Genetic Algorithm                       |                                     Single-label classification                                     |       ×       |  × |               √              |                                                      ×                                                      | [`PDF`](https://arxiv.org/abs/1803.00684)                                                                                                               |
@@ -225,6 +226,17 @@ It is worth mentioning that some tools have democratized the space of different 
 |     Rafiki    | 2018 |  Python  | Scikit-Learn TensorFlow |    Distributed random search, Bayesian Optimization   |       ×       |  √ |                          [`Github`](https://github.com/nginyc/rafiki)                         |     [`PDF`](http://www.vldb.org/pvldb/vol12/p128-wang.pdf)     |
 | TransmogrifAI | 2018 |   Scala  |         SparkML         |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
   + ### Cloud Based Frameworks
+  
+  + ### NAS Frameworks
+  
+  |            | Date | Supported Architectures |                                                Optimization Method                                                |                    Supported Frameworks                   | UI |                     Open Source                     |                                    PDF                                   |
+|:----------:|:----:|:-----------------------:|:-----------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|:--:|:---------------------------------------------------:|:------------------------------------------------------------------------:|
+| Auto-Keras | 2018 |     No Restrictions     |                                                  Network Morphism                                                 |                           Keras                           |  √ | [`Github`](https://github.com/keras-team/autokeras) |                 [`PDF`](https://arxiv.org/pdf/1806.10282)                |
+|   AutoNet  | 2016 |           FCN           |                                                        SMAC                                                       |                          PyTorch                          |  × |  [`Github`](https://github.com/automl/Auto-PyTorch) | [`PDF`](https://www.automl.org/wp-content/uploads/2018/12/autonet-1.pdf) |
+|     NNI    | 2019 |     No Restrictions     | Random and GridSearch, Different Bayesian Optimizations, Annealing, Network Morphism, Hyper-Band, Naive Evolution | PyTorch, TensorFlow, Keras, Caffe2, CNTK, Chainer, Theano |  √ |     [`Github`](https://github.com/Microsoft/nni)    |                                     ×                                    |
+|    enas    | 2018 |         CNN, RNN        |                                               Reinforcement Learning                                              |                         TensorFlow                        |  × |    [`Github`](https://github.com/melodyguan/enas)   |                 [`PDF`](https://arxiv.org/abs/1802.03268)                |
+|     NAO    | 2018 |         CNN, RNN        |                                            Gradient based optimization                                            |                     TensorFlow PyTorch                    |  × |    [`Github`](https://github.com/renqianluo/NAO)    |                 [`PDF`](https://arxiv.org/abs/1808.07233)                |
+|    DARTS   | 2019 |     No Restrictions     |                                            Gradient based optimization                                            |                          PyTorch                          |  × |     [`Github`](https://github.com/quark0/darts)     |                 [`PDF`](https://arxiv.org/abs/1806.09055)                |
 
 
 <hr>
