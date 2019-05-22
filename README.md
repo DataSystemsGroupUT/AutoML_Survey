@@ -270,13 +270,20 @@ The aspects of these two building blocks can help on covering what is missed in 
       - 2017 | Ground: A Data Context Service  | Hellerstein et al. | CIDR | [`PDF`](http://cidrdb.org/cidr2017/papers/p111-hellerstein-cidr17.pdf) | [`URL`](http://www.ground-context.org/)
       - 2016 | ProvDB: A System for Lifecycle Management of Collaborative Analysis Workflows. | Miao et al. | CoRR | [`PDF`](https://arxiv.org/abs/1610.04963) | [`Github`](https://github.com/DLR-SC/prov-db-connector)
       - 2016 | Goods: Organizing Google’s Datasets.  | Halevy et al. | SIGMOD | [`PDF`](https://research.google.com/pubs/archive/45390.pdf)
-    
   + #### Data Validation
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
+    + ##### Automatic Correction
+      - 2017 | MacroBase: Prioritizing Attention in Fast Data. | Bailis et al. | SIGMOD | [`PDF`](http://www.bailis.org/papers/macrobase-sigmod2017.pdf) | [`Github`](https://github.com/stanford-futuredata/macrobase)
+      - 2015 | Data X-Ray: A Diagnostic Tool for Data Errors. | Wang et al. | SIGMOD | [`PDF`](https://people.cs.umass.edu/~xlwang/dataxray-paper.pdf)
+    + ##### Automatic Alerting
+      - 2009 | On Approximating Optimum Repairs for Functional Dependency Violations. | Kolahi and Lakshmanan | ICDT | [`PDF`](https://openproceedings.org/2009/conf/icdt/KolahiL09.pdf)
+      - 2005 | A Cost-based Model and Effective Heuristic for Repairing Constraints by Value Modification. | Bohannon et al. | SIGMOD | [`PDF`](http://homepages.inf.ed.ac.uk/wenfei/papers/sigmod05.pdf)
   + #### Data Preparation
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
-    - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
+    + ##### Feature Addition
+      - 2018 | Google Search Engine for Datasets | [`URL`](https://toolbox.google.com/datasetsearch)
+      - 2014 | DataHub: Collaborative Data Science & Dataset Version Management at Scale. | Bhardwaj et al. | CoRR | [`PDF`](http://db.csail.mit.edu/pubs/datahubcidr.pdf) | [`URL`](https://datahub.csail.mit.edu/www/)
+      - 2013 | OpenML: Networked Science in Machine Learning. | Vanschoren et al.  | SIGKDD | [`PDF`](https://arxiv.org/abs/1407.7722) | [`URL`](https://openml.org)
+    + ##### Feature Synthesis
+      - 2015 | Deep feature synthesis: Towards automating data science endeavors. | Kanter and Veeramachaneni | DSAA | [`PDF`](http://www.jmaxkanter.com/static/papers/DSAA_DSM_2015.pdf) | [`Github`](https://github.com/Featuretools/featuretools)
 ### Post-Modeling
   + #### Model Tracking
     - 2018 | Meta-Learning: A Survey.  | Vanschoren | CoRR | [`PDF`](https://arxiv.org/abs/1810.03548)
