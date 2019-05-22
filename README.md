@@ -226,6 +226,10 @@ It is worth mentioning that some tools have democratized the space of different 
 | TransmogrifAI | 2018 |   Scala  |         SparkML         |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
 
   + ### Cloud Based Frameworks
+    - Google AutoML | [`URL`](https://cloud.google.com/automl/)
+    - Azure AutoML | [`URL`](https://azure.microsoft.com/en-us/)
+    - Amazon SageMaker | [`URL`](https://aws.amazon.com/)
+    - LEAF (Auto Deep Learning Over Cloud Platforms) | [`PDF`](https://arxiv.org/abs/1902.06827)
   
   + ### NAS Frameworks
   
