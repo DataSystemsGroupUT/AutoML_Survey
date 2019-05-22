@@ -26,7 +26,15 @@ This repository will be organized into X separate sections:
   - [Evolutionary Methods](#evolutionary-methods)
   - [Gradient Based Methods](#gradient-based-methods)
   - [Bayesian Optimization](#bayesian-optimization)
-+ [Automated Hyper-Parameter Optimization](#automated-hyper-paramtere-optimization)
++ [Hyper-Parameter Optimization](#hyper-parameter-optimization)
+  - [Black Box Optimization](#black-box-optimization)
+    - [Grid and Random Search](#grid-and-random-search)
+    - [Bayesian Optimization](#bayesian-optimization)
+    - [Simulated Annealing](#simulated-annealing)
+    - [Genetic Algorithms](#genetic-algorithms)
+  - [Multi-Fidelity Optimization](#multi-fidelity-optimization)
+    - [Modeling Learning Curve](#modeling-learning-curve)
+    - [Bandit Based](#bandit-based)
 + [Various tools and frameworks that have been implemented to tackle the CASH problem.](#Tools-Frameworks)
 + [Pre-modeling and Post-Modeling of the complex machine learning pipeline.](#Complex-Pipeline)
 
@@ -38,7 +46,7 @@ Meta-learning can be described as the process of leaning from previous experienc
   - 2008 | Metalearning: Applications to data mining | Brazdil et al. | Springer Science & Business Media | [`PDF`](https://www.springer.com/gp/book/9783540732624)
 
 <div style="text-align: center">
-<img src="Figures/MetaLearning-1.png" width="700px" atl="Machine Learning Pipeline"/>
+<img src="Figures/MetaLearning-1.png" width="800px" atl="Machine Learning Pipeline"/>
 </div>
 
 ### Learning From Model Evaluation
@@ -124,3 +132,51 @@ Neural Architecture Search (NAS) is a fundamental step in automating the machine
   - 2014 | Raiders of the lost architecture: Kernels for Bayesian optimization in conditional parameter spaces. | Swersky et al. | [`PDF`](https://arxiv.org/abs/1409.4011)
   - 2013 | Making a science of model search: Hyperparameter optimization in hundreds of dimensions for vision architectures. | Bergstra et al. | [`PDF`](http://proceedings.mlr.press/v28/bergstra13.pdf)
   - 2011 | Algorithms for hyper-parameter optimization. | Bergstra et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
+  
+  
+  <hr>
+  
+  
+## Hyper-Parameter Optimization
+After choosing the model pipeline algorithm(s) with the highest potential for achieving the top performance on the input dataset, the next step is tuning the hyper-parameters of such model in order to further optimize the model performance. 
+It is worth mentioning that some tools have democratized the space of different learning algorithms in discrete number of model pipelines. So, the model selection itself can be considered as a categorical parameter that needs to be tuned in the first place before modifying its hyper-parameters.
+
+<div style="text-align: center">
+<img src="Figures/HPOptimization-1.png" width="900px" atl="Classification of Hyper-Parameter Optimization Methods"/>
+</div>
+
+### Black Box Optimization
+  + #### Grid and Random Search
+    - 2017 | Design and analysis of experiments. | Montgomery | [`PDF`](https://support.sas.com/content/dam/SAS/support/en/books/design-and-analysis-of-experiments-by-douglas-montgomery/66584_excerpt.pdf)
+    - 2015 | Adaptive control processes: a guided tour. | Bellman | [`PDF`](https://onlinelibrary.wiley.com/doi/abs/10.1002/nav.3800080314)
+    - 2012 | Random search for hyper-parameter optimization. | Bergstra and Bengio | JMLR | [`PDF`](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf)
+  + #### Bayesian Optimization
+    - 2018 | Bohb: Robust and efficient hyperparameter optimization at scale. | Falkner et al. | JMLR | [`PDF`](http://proceedings.mlr.press/v80/falkner18a/falkner18a.pdf)
+    - 2017 | On the state of the art of evaluation in neural language models. | Melis et al. | [`PDF`](https://arxiv.org/abs/1707.05589)
+    - 2015 | Automating model search for large scale machine learning. | Sparks et al. | ACM-SCC | [`PDF`](https://amplab.cs.berkeley.edu/wp-content/uploads/2015/07/163-sparks.pdf)
+    - 2015 | Scalable bayesian optimization using deep neural networks. | Snoek et al. | ICML | [`PDF`](https://arxiv.org/abs/1502.05700)
+    - 2014 | Bayesopt: A bayesian optimization library for nonlinear optimization, experimental design and bandits. | Martinez-Cantin | JMLR | [`PDF`](http://jmlr.org/papers/v15/martinezcantin14a.html)
+    - 2013 | Making a science of model search: Hyperparameter optimization in hundreds of dimensions for vision architectures. | Bergstra et al. | [`PDF`](http://proceedings.mlr.press/v28/bergstra13.pdf)
+    - 2013 | Towards an empirical foundation for assessing bayesian optimization of hyperparameters.  | Eggensperger et al. | NIPS | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/13-BayesOpt_EmpiricalFoundation.pdf)
+    - 2013 | Improving deep neural networks for LVCSR using rectified linear units and dropout. | Dahl et al. | IEEE-ICASSP | [`PDF`](http://ieeexplore.ieee.org/abstract/document/6639346/)
+    - 2012 | Practical bayesian optimization of machine learning algorithms. | Snoek et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf)
+    - 2011 | Sequential model-based optimization for general algorithm configuration. | Hutter et al. | LION | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-642-25566-3_40)
+    - 2011 | Algorithms for hyper-parameter optimization. | Bergstra et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
+    - 1998 | Efficient global optimization of expensive black-box functions. | Jones et al. | [`PDF`](http://www.ressources-actuarielles.net/EXT/ISFA/1226.nsf/0/f84f7ac703bf5862c12576d8002f5259/$FILE/Jones98.pdf)
+    - 1978 | Adaptive control processes: a guided tour. | Mockus et al. | [`PDF`](https://www.researchgate.net/publication/248818761_The_application_of_Bayesian_methods_for_seeking_the_extremum)
+    - 1975 | Single-step Bayesian search method for an extremum of functions of a single variable. | Zhilinskas | [`PDF`](https://link.springer.com/article/10.1007/BF01069961)
+    - 1964 | A new method of locating the maximum point of an arbitrary multipeak curve in the presence of noise. | Kushner | [`PDF`](https://fluidsengineering.asmedigitalcollection.asme.org/article.aspx?articleid=1431594)
+  + #### Simulated Annealing
+    - 1983 | Optimization by simulated annealing. | Kirkpatrick et al. | Science | [`PDF`](https://science.sciencemag.org/content/220/4598/671)
+  + #### Genetic Algorithms
+    - 1992 | Adaptation in natural and artificial systems: an introductory analysis with applications to biology, control, and artificial intelligence. | Holland et al. | [`PDF`](https://ieeexplore.ieee.org/book/6267401)
+### Multi-Fidelity Optimization
+  - 2019 | Multi-Fidelity Automatic Hyper-Parameter Tuning via Transfer Series Expansion. | Hu et al. | [`PDF`](http://lamda.nju.edu.cn/yuy/GetFile.aspx?File=papers/aaai19_huyq.pdf)
+  - 2016 | Review of multi-fidelity models. | Fernandez-Godino | [`PDF`](https://www.arxiv.org/abs/1609.07196v2)
+  - 2012 | Provably convergent multifidelity optimization algorithm not requiring high-fidelity derivatives. | March and Willcox | AIAA | [`PDF`](https://arc.aiaa.org/doi/10.2514/1.J051125)
+  + #### Modeling Learning Curve
+    - 2015 | Speeding up automatic hyperparameter optimization of deep neural networks by extrapolation of learning curves. | Domhan et al. | IJCAI | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/15-IJCAI-Extrapolation_of_Learning_Curves.pdf)
+    - 1998 | Efficient global optimization of expensive black-box functions. | Jones et al. | JGO | [`PDF`](http://www.ressources-actuarielles.net/EXT/ISFA/1226.nsf/0/f84f7ac703bf5862c12576d8002f5259/$FILE/Jones98.pdf)
+  + #### Bandit Based
+    - 2016 | Non-stochastic Best Arm Identification and Hyperparameter Optimization. | Jamieson and Talwalkar | AISTATS | [`PDF`](https://arxiv.org/abs/1502.07943)
+    - 2016 | Hyperband: A novel bandit-based approach to hyperparameter optimization. | Kirkpatrick et al. | JMLR | [`PDF`](http://www.jmlr.org/papers/volume18/16-558/16-558.pdf)
