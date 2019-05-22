@@ -292,9 +292,9 @@ The aspects of these two building blocks can help on covering what is missed in 
 <hr>
 
 ### AutoML Challenges
-  - 2017 | First AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/2321)
-  - 2018 | Second AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/17767)
   - 2019 | Third AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/19836)
+  - 2018 | Second AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/17767)
+  - 2017 | First AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/2321)
 
 <hr>
 
