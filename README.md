@@ -286,13 +286,18 @@ The aspects of these two building blocks can help on covering what is missed in 
   - 2019 | Model Chimp | [`URL`](https://modelchimp.com/)
   - 2018 | ML-Flow | [`URL`](https://mlflow.org)
   - 2017 | Datmo | [`URL`](https://github.com/datmo/datmo)
-  
+
+<hr>
+
 ## Contribute:  
 To contribute a change to add more references to our repository, you can follow these steps:
 1. Create a branch in git and make your changes.
 2. Push branch to github and issue pull request (PR).
 3. Discuss the pull request.
 4. We are going to review the request, and merge it to the repository.
+
+<hr>
+
 
 ## Citation:
  For more details, please refer to our Survey Paper
