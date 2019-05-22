@@ -8,7 +8,7 @@ In this repository, we present the references mentioned in a comprehensive surve
 <hr>
 
 ## Table of Contents & Organization:
-This repository will be organized into 5 separate sections:
+This repository will be organized into 6 separate sections:
 + [Meta-Learning Techniques for AutoML search problem](#meta-learning-techniques-for-automl-search-problem)
   - [Learning From Model Evaluation](#learning-from-model-evaluation)
     - [Surrogate Models](#surrogate-models)
@@ -46,6 +46,7 @@ This repository will be organized into 5 separate sections:
     - [Data Validation](#data-validation)
     - [Data Preparation](#data-preparation)
   - [Post-Modeling](#post-modeling)
++ [AutoML Competitions](automl-competitions)
 
 <hr>
 
@@ -280,12 +281,20 @@ The aspects of these two building blocks can help on covering what is missed in 
       - 2018 | Google Search Engine for Datasets | [`URL`](https://toolbox.google.com/datasetsearch)
       - 2014 | DataHub: Collaborative Data Science & Dataset Version Management at Scale. | Bhardwaj et al. | CoRR | [`PDF`](http://db.csail.mit.edu/pubs/datahubcidr.pdf) | [`URL`](https://datahub.csail.mit.edu/www/)
       - 2013 | OpenML: Networked Science in Machine Learning. | Vanschoren et al.  | SIGKDD | [`PDF`](https://arxiv.org/abs/1407.7722) | [`URL`](https://openml.org)
+      - 2007 | UCI: Machine Learning Repository. | Dua, D. and Graff, C. | [`URL`](https://archive.ics.uci.edu/ml/index.php)
     + ##### Feature Synthesis
       - 2015 | Deep feature synthesis: Towards automating data science endeavors. | Kanter and Veeramachaneni | DSAA | [`PDF`](http://www.jmaxkanter.com/static/papers/DSAA_DSM_2015.pdf) | [`Github`](https://github.com/Featuretools/featuretools)
 ### Post-Modeling
   - 2019 | Model Chimp | [`URL`](https://modelchimp.com/)
   - 2018 | ML-Flow | [`URL`](https://mlflow.org)
   - 2017 | Datmo | [`URL`](https://github.com/datmo/datmo)
+
+<hr>
+
+### AutoML Challenges
+  - 2017 | First AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/2321)
+  - 2018 | Second AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/17767)
+  - 2019 | Third AutoML Challenge | [`URL`](https://competitions.codalab.org/competitions/19836)
 
 <hr>
 
