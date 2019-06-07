@@ -309,7 +309,7 @@ To contribute a change to add more references to our repository, you can follow 
 
 
 ## Citation:
- For more details, please refer to our Survey Paper
+ For more details, please refer to our Survey Paper [`PDF`](https://arxiv.org/abs/1906.02287)
  ```
 Radwa El-Shawi, Mohamed Maher, Sherif Sakr., Automated Machine Learning: State-of-The-Art and Open Challenges (2019).
 ```
