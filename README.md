@@ -229,6 +229,7 @@ It is worth mentioning that some tools have democratized the space of different 
 | TransmogrifAI | 2018 |   Scala  |           SparkML          |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
 |    ATMSeer    | 2019 |  Python  | Scikit-Learn On Top Of ATM | Hybrid Bayesian, and Multi-armed bandits Optimization |       √       |  √ |                         [`Github`](https://github.com/HDI-Project/ATMSeer)                    |            [`PDF`](https://arxiv.org/abs/1902.05009)           |
 |    D-SmartML  | 2019 |  Scala   | SparkMlib                  | Grid Search, Random Search, Hyperband                 |       √       |  x |                         [`Github`](https://github.com/DataSystemsGroupUT/Distributed-SmartML) |            x                                                   |
+|   Databricks  | 2019 |  Python  | SparkMlib                  | Hyperopt                                              |       x       |  √ |                         × [`Website`](https://databricks.com/product/automl-on-databricks#resource-link) |            x                                                   |
 
   + ### Cloud-Based Frameworks
     - Google AutoML | [`URL`](https://cloud.google.com/automl/)
