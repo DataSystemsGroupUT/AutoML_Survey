@@ -193,7 +193,7 @@ It is worth mentioning that some tools have democratized the space of different 
   + #### Bandit Based
     - 2018 | Massively parallel hyperparameter tuning. | Li et al. | AISTATS | [`PDF`](https://arxiv.org/pdf/1810.05934.pdf)
 	- 2016 | Non-stochastic Best Arm Identification and Hyperparameter Optimization. | Jamieson and Talwalkar | AISTATS | [`PDF`](https://arxiv.org/abs/1502.07943)
-    - 2016 | Hyperband: A novel bandit-based approach to hyperparameter optimization. | Kirkpatrick et al. | JMLR | [`PDF`](http://www.jmlr.org/papers/volume18/16-558/16-558.pdf) [`Github`](https://github.com/zygmuntz/hyperband)
+    - 2016 | Hyperband: A novel bandit-based approach to hyperparameter optimization. | Kirkpatrick et al. | JMLR | [`PDF`](http://www.jmlr.org/papers/volume18/16-558/16-558.pdf) [`Github`](https://github.com/zygmuntz/hyperband) [`Github (Distributed Hyperband - BOHB)`](https://github.com/automl/HpBandSter)
 
 <hr>
 
