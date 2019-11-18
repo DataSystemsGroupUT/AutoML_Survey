@@ -228,6 +228,7 @@ It is worth mentioning that some tools have democratized the space of different 
 |     Rafiki    | 2018 |  Python  |   Scikit-Learn TensorFlow  |    Distributed random search, Bayesian Optimization   |       ×       |  √ |                          [`Github`](https://github.com/nginyc/rafiki)                         |     [`PDF`](http://www.vldb.org/pvldb/vol12/p128-wang.pdf)     |
 | TransmogrifAI | 2018 |   Scala  |           SparkML          |        Bayesian Optimization, and Random Search       |       ×       |  × | [`Github`](https://github.com/salesforce/TransmogrifAI)  [`Website`](https://transmogrif.ai/) |                                ×                               |
 |    ATMSeer    | 2019 |  Python  | Scikit-Learn On Top Of ATM | Hybrid Bayesian, and Multi-armed bandits Optimization |       √       |  √ |                         [`Github`](https://github.com/HDI-Project/ATMSeer)                    |            [`PDF`](https://arxiv.org/abs/1902.05009)           |
+|    D-SmartML  | 2019 |  Scala   | SparkMlib                  | Grid, Random, Huperband                               |       √       |  x |                         [`Github`](https://github.com/DataSystemsGroupUT/Distributed-SmartML) |            x                                                   |
 
   + ### Cloud-Based Frameworks
     - Google AutoML | [`URL`](https://cloud.google.com/automl/)
