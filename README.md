@@ -170,7 +170,7 @@ It is worth mentioning that some tools have democratized the space of different 
     - 2013 | Towards an empirical foundation for assessing bayesian optimization of hyperparameters.  | Eggensperger et al. | NIPS | [`PDF`](https://ml.informatik.uni-freiburg.de/papers/13-BayesOpt_EmpiricalFoundation.pdf)
     - 2013 | Improving deep neural networks for LVCSR using rectified linear units and dropout. | Dahl et al. | IEEE-ICASSP | [`PDF`](http://ieeexplore.ieee.org/abstract/document/6639346/)
     - 2012 | Practical bayesian optimization of machine learning algorithms. | Snoek et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf) [`Github (Spearmint)`](https://github.com/JasperSnoek/spearmint)
-    - 2011 | Sequential model-based optimization for general algorithm configuration. | Hutter et al. | LION | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-642-25566-3_40)
+    - 2011 | Sequential model-based optimization for general algorithm configuration. | Hutter et al. | LION | [`PDF`](https://link.springer.com/chapter/10.1007/978-3-642-25566-3_40) [`Github`](https://github.com/automl/SMAC3)
     - 2011 | Algorithms for hyper-parameter optimization. | Bergstra et al. | NIPS | [`PDF`](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
     - 1998 | Efficient global optimization of expensive black-box functions. | Jones et al. | [`PDF`](http://www.ressources-actuarielles.net/EXT/ISFA/1226.nsf/0/f84f7ac703bf5862c12576d8002f5259/$FILE/Jones98.pdf)
     - 1978 | Adaptive control processes: a guided tour. | Mockus et al. | [`PDF`](https://www.researchgate.net/publication/248818761_The_application_of_Bayesian_methods_for_seeking_the_extremum)
